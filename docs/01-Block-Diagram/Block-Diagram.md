@@ -13,5 +13,5 @@ The purpose of this block diagram is to provide a clear overview of the systemâ€
 <p align="center">
 <img width="722" height="522" alt="Individual Block Diagram - Logan Maelstrom drawio (1)" src="https://github.com/user-attachments/assets/f1d6007f-d11a-4f0a-8954-c5140c127001" />
   </p>
-<p align="center">Indivial Block diagram - Logan Maelstrom</p>
+<p align="center">Individual Block diagram - Logan Maelstrom</p>
 
