@@ -25,20 +25,23 @@ title: Component Selection Example
 
 > Also acceptable, more markdown friendly
 
-**External Clock Module**
+**6-Axis Inertial Measurement Unit (IMU)**
 
-1. XC1259TR-ND surface mount crystal
+1. BMI323 surface mount
 
-    ![](image1.png)
+    ![](BMI323.png)
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+    * $3.91/each
+    * [link to product](https://www.digikey.com/en/products/detail/bosch-sensortec/BMI323/16719593)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+    | Low power consumption                     | Tiny 14-pin LGA package                                          |
+    | Compatible with 3.3 V rail                | More features than our project application may require           |
+    | Supports I²C                              | Requires software/configuration work                             |
+    | Small package                             | No integrated magnetometer                                       |
+    | Built-in motion/orientation detection     |
+    | Wide programmable measurement ranges      |
 
 1. CTX936TR-ND surface mount oscillator
 
