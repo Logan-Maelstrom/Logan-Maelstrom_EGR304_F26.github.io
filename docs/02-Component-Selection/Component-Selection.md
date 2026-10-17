@@ -1,5 +1,5 @@
 ---
-title: Component Selection Example
+Component Selection
 ---
 
 **6-Axis Inertial Measurement Unit (IMU)**
