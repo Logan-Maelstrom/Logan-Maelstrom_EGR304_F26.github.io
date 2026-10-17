@@ -62,7 +62,7 @@ title: Component Selection Example
 
 1. AP2112K-3.3TRG1 surface mount 3.3V regulator
 
-   ![](AP2112K-3.3TRG1.png)
+   ![](APK2112K-3.3TRG1.png)
 
    * $0.28/each
    * [Link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP2112K-3-3TRG1/4470746)
