@@ -180,4 +180,59 @@ title: Component Selection Example
 
 **9V External Power Source**
 
-1. Microchip AC002014 - 9V, 800mA
+1. Microchip AC002014 - 9V External Power Supply, 800mA
+
+   ![](AC002014.jpg)
+
+   * $25.49/each
+   * [Link to product](https://www.digikey.com/en/products/detail/microchip-technology/AC002014/2480293)
+   
+   | Pros                                                              | Cons                |
+   | ----------------------------------------------------------------- | ------------------- |
+   | Provides required 9V output                                       | Most expensive (per amp) of the three power-supply candidates     |
+   | Sufficient 800mA output capacity                                  | Limited to 800mA maximum output |
+   | International 110–220 VAC input                                   | Lower 7.2W capacity | 
+   | Interchangeable AC plug blades                                    | 2.5mm ID plug requires matching barrel jack |
+   | Standard center-positive barrel connector                         | Less current headroom for future additions |
+   | Commercial Class II wall supply                                   | 
+   | Currently in stock                                                |
+
+2. UNIIVE UV313-0913 9V External Power Supply
+
+   ![](UV313-0913.jpg)
+
+   * $17.40/each
+   * [Link to product](https://www.digikey.com/en/products/detail/unifive-global-limited/UV313-0913/26420296)
+  
+   | Pros                                                              | Cons                |
+   | ----------------------------------------------------------------- | ------------------- |
+   | Lowest price of the three candidates                              | Lower output capacity than 2.2A Bel Power Solutions candidate     |
+   | Higher 1.3A output capacity                                       | Fixed US-style AC plug |
+   | Universal 100–240 VAC input                                       | No interchangeable AC plug blades | 
+   | 82.96% efficiency                                                 | 2.1mm ID requires matching barrel jack |
+   | Low 100mW no-load consumption                                     | Limited 0–40°C operating range |
+   | Safety approvals: CB, CE, cULus, FCC                              | 
+   | Long 1.5m output cable                                            |
+   | Currently in stock                                                |
+
+3. Bel Power Solutions SMI18-9-V-P6R
+
+   ![](SMI18-9-V-P6R.jpg)
+
+   * $30.27/each
+   * [Link to product](https://www.digikey.com/en/products/detail/bel-power-solutions/SMI18-9-V-P6R/5417776)
+  
+   | Pros                                                              | Cons                |
+   | ----------------------------------------------------------------- | ------------------- |
+   | Highest 2.2A output capacity                                      | Highest overall purchase price of all candidates     |
+   | High 20W output power                                             | More power capacity than project likely requires |
+   | Universal 90–264 VAC input                                        | Larger/heavier power adapter | 
+   | Interchangeable AC plug blades                                    | 2.5mm ID requires matching barrel jack |
+   | Level VI energy efficiency                                        | Limited 0–40°C operating range |
+   | Low 100mW no-load consumption                                     | Right-angle barrel plug may constrain enclosure layout |
+   | Long 1.5m output cable                                            |
+   | Extensive international safety approvals                          |
+
+**Choice:** Option 2: UNIIVE UV313-0913 9V External Power Supply
+
+**Rationale:** The UV313-0913 was selected because it provides the best balance of output capacity, price, efficiency, and availability for our Drowsy Driver Alarm project. Its 1.3A output provides more current headroom than the 800mA Microchip supply while costing significantly less. Although the Bel Power Solutions supply can provide 2.2A, that additional capacity is likely unnecessary for our system and comes at a considerably higher price. The UV313-0913 also supports universal 100–240 VAC input, has multiple safety certifications, and has low no-load power consumption. Overall, it provides sufficient power for the system without paying for unnecessary excess capacity.
