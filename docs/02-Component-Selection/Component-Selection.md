@@ -27,7 +27,7 @@ title: Component Selection Example
 
 **6-Axis Inertial Measurement Unit (IMU)**
 
-1. BMI323 surface mount accelerometer/gyroscope
+1. BMI323 surface mount accelerometer/gyroscope (6 axis)
 
     ![](BMI323.png)
 
@@ -43,7 +43,7 @@ title: Component Selection Example
     | Built-in motion/orientation detection     |
     | Wide programmable measurement ranges      |
 
-1. BMI270 surface mount accelerometer/gyroscope
+2. BMI270 surface mount accelerometer/gyroscope (6 axis)
 
     ![](BMI323.png)
 
@@ -52,10 +52,29 @@ title: Component Selection Example
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+    | Low power consumption                                             | More expensive than BMI323     |
+    | Compatable with 3.3 V rail                                        | Tiny 14-pin LGA package is difficult to solder/prototype |
+    | Supports I²C communication                                        | Many wearable features aren't useful for the specific Drowsy Driver Alarm project | 
+    | Designed specifically for wearable applications                   | Requires software/configuration to work |
+    | Small size/footprint (2.5mm x 3.0mm)                              |
+    | Built-in motion detection features                                |
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+3. LSM6DSMTR surface mount accelerometer/gyroscope/temperature (6 axis)
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+    ![](LSM6DSMTR.png)
+
+    * $4.55/each
+    * [Link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/LSM6DSMTR/6192777?s=N4IgTCBcDaIDYGcC2A2AJsgLgJxAXQF8g)
+  
+    | Pros                                                              | Cons                | 
+    | ----------------------------------------------------------------- | ------------------- |
+    | Low power consumption                                             | More expensive than both previous examples
+    | Compatible with 3.3 V rail                                        | Tiny 14-pin LGA package is difficult to solder/prototype |
+    | Supports I²C communication                                        | Older-generation IMU design | 
+    | Built-in tilt detection and significant motion detection          | No I3C interface    |
+    | High mechanical-shock robustness                                  | OIS/EIS features are unnecessary for our Drowsy Driver Alarm project |
+    | Dedicated motion interrupts                                       | LGA package is difficult to prototype with |
+
+**Choice:** Option 2: BMI270 surface mount accelerometer/gyroscope (6 axis)
+
+**Rationale:** The BMI270 was manufactured with the purpose of wearable applications, such as recognizing human/head motion, making it a striking candidate from the list. Bosch specifically designed this chip for the same purpose our project is meant to portray. the BMI270 also has on-chip any-motion, no-motion, stationary, significant-motion, and activity-change recognition, which lines up incredibly well with that our project is trying to accomplish. Overall, this is our best candidate for a fair price, and there are plenty of units in stock on DigiKey with quick shipping times.
