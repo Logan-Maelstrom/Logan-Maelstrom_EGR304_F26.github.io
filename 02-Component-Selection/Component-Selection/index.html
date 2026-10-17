@@ -1091,7 +1091,7 @@
 </tbody>
 </table>
 <ol>
-<li>LM2575MX-5.0/NOPB Surface-Mount 5V Linear Regulator</li>
+<li>LM2575MX-5.0/NOPB Surface-Mount 5V Buck (Switching) Regulator</li>
 </ol>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../LM2575MX-5.0.NOPB.png" data-desc-position="bottom"><img alt="" src="../LM2575MX-5.0.NOPB.png"></a></p>
 <ul>
@@ -1107,39 +1107,87 @@
 </thead>
 <tbody>
 <tr>
-<td>High 1.5A output capacity</td>
-<td>High 8mA quiescent current</td>
+<td>More efficient than linear regulators</td>
+<td>Requires external inductor and capacitors</td>
 </tr>
 <tr>
-<td>Compact surface-mount package</td>
-<td>Poor efficiency for 9V → 5V conversion</td>
+<td>Wide 4–40 V input range</td>
+<td>Large 24-pin SOIC package</td>
 </tr>
 <tr>
-<td>High 80dB power-supply rejection</td>
-<td>Can generate significant heat</td>
+<td>High 1 A output capacity</td>
+<td>Only 52kHz switching frequency</td>
 </tr>
 <tr>
-<td>Built-in short-circuit protection</td>
-<td>2V maximum dropout at 1A</td>
+<td>Built-in overcurrent protection</td>
+<td>More complex PCB design than linear regulator</td>
 </tr>
 <tr>
-<td>Built-in overtemperature protection</td>
-<td>Fixed 5V output</td>
+<td>Enable/shutdown control</td>
+<td>Switching can introduce electrical noise</td>
 </tr>
 <tr>
-<td>35 V maximum input</td>
-<td>Harder to solder than through-hole candidates</td>
+<td>Reduced heat generation vs. linear regulator</td>
+<td>More expensive than L7805ACV-DG</td>
 </tr>
 <tr>
-<td>High availability</td>
-<td></td>
+<td>Fixed 5V output simplifies configuration</td>
+<td>Lower output capacity than LMR43620R5RPER</td>
 </tr>
 </tbody>
 </table>
 <ol>
-<li>LMR43620R5RPER Surface-Mount Synchronous Buck Regulator</li>
+<li>LMR43620R5RPER Surface-Mount 5V Buck (Switching) Regulator</li>
 </ol>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href=".png" data-desc-position="bottom"><img alt="" src=".png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../LMR43620R5RPER.png" data-desc-position="bottom"><img alt="" src="../LMR43620R5RPER.png"></a></p>
+<ul>
+<li>$2.27/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LMR43620R5RPER/20414090?s=N4IgTCBcDaIDIFkBKAWAzANjABiQViQAUBRJEAXQF8g">Link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High 2A output capacity</td>
+<td>Much more expensive</td>
+</tr>
+<tr>
+<td>High efficiency compared with linear regulators</td>
+<td>Requires external inductor and capacitors</td>
+</tr>
+<tr>
+<td>Extremely low 1.3µA quiescent current</td>
+<td>More complex PCB layout</td>
+</tr>
+<tr>
+<td>Wide 3–36V input range</td>
+<td>Tiny VQFN package is more difficult to hand solder</td>
+</tr>
+<tr>
+<td>Reduced heat generation</td>
+<td>Switching regulator can introduce electrical noise</td>
+</tr>
+<tr>
+<td>Compact 2mm × 2mm package</td>
+<td>More complex than necessary for light loads</td>
+</tr>
+<tr>
+<td>Built-in overcurrent protection</td>
+<td></td>
+</tr>
+<tr>
+<td>Wide −40°C to 150°C operating range</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> Option 3: LMR43620R5RPER Surface-Mount 5V Buck (Switching) Regulator</p>
+<p><strong>Rationale:</strong> The LMR43620R5RPER is selected because its high efficiency and low power consumption make it the best candidate for our Drowsy Driver Alarm. Unlike the L7805ACV-DG linear regulator, the LMR43620 uses a buck switching design, allowing a 9V input to be stepped down to 5V with significantly less energy being wasted as heat. This is especially beneficial for our wearable design, where excessive heat and unnecessary power consumption should be minimized. The LMR43620 also provides up to 2A of output current, giving our circuit plenty of current capacity, while its small 2mm × 2mm package minimizes PCB space. Although it is more expensive and requires additional external components, its efficiency, low 1.3µA quiescent current, compact size, and reduced heat generation make these tradeoffs worthwhile for our application.</p>
 
 
 
