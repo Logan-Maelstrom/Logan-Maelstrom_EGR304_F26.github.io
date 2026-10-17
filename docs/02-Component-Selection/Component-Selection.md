@@ -79,7 +79,7 @@ title: Component Selection Example
 
 2. RT9080-33GJ5 through hole 3.3V linear regulator
 
-   ![](APK2112K-3.3TRG1.png)
+   ![](RT9080-33GJ5.jpg)
 
    * $0.28/each
    * [Link to product](https://www.digikey.com/en/products/detail/richtek-usa-inc/RT9080-33GJ5/6161634)
@@ -93,4 +93,4 @@ title: Component Selection Example
    | Built-in overtemperature protection                               | Linear-regulator efficiency loss
    | Enable/shutdown control                                           |
    | High availability                                                 |
-   | Very inexpensive
+   | Very inexpensive                                                  |
