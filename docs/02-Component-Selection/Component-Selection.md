@@ -60,7 +60,7 @@ title: Component Selection Example
 
 **3.3V Voltage Regulator**
 
-1. AP2112K-3.3TRG1 surface mount 3.3V regulator
+1. AP2112K-3.3TRG1 surface mount 3.3V linear regulator
 
    ![](APK2112K-3.3TRG1.png)
 
@@ -76,3 +76,21 @@ title: Component Selection Example
    | Built-in overtemperature protection                               | Fixed 3.3V output
    | Enable/shutdown control                                           |
    | High availability                                                 |
+
+2. RT9080-33GJ5 through hole 3.3V linear regulator
+
+   ![](APK2112K-3.3TRG1.png)
+
+   * $0.28/each
+   * [Link to product](https://www.digikey.com/en/products/detail/richtek-usa-inc/RT9080-33GJ5/6161634)
+  
+   | Pros                                                              | Cons                |
+   | ----------------------------------------------------------------- | ------------------- |
+   | Extremely low 4µA quiescent current                               | 5.5V maximum current     |
+   | High 600mA output capacity                                        | Higher maximum dropout than AP2112K |
+   | 75dB power-supply rejection                                       | Surface-mount package may be more difficult to solder | 
+   | Built-in overcurrent protection                                   | Fixed 3.3V output |
+   | Built-in overtemperature protection                               | Linear-regulator efficiency loss
+   | Enable/shutdown control                                           |
+   | High availability                                                 |
+   | Very inexpensive
