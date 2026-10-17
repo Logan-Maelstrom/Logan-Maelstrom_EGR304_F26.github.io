@@ -89,11 +89,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#examples" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -513,17 +508,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Component Selection Example
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -533,56 +517,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -808,47 +742,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Examples
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -872,40 +765,6 @@
 
   <h1>Component Selection Example</h1>
 
-<h2 id="examples">Examples</h2>
-<h3 id="style-1">Style 1</h3>
-<blockquote>
-<p>This is the example found in the assignment, uses more html</p>
-</blockquote>
-<p><em>Table 1: Example component selection</em></p>
-<p><strong>External Clock Module</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Solution</strong></th>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a><br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></td>
-<td>* Inexpensive[^1]<br>* Compatible with PSoC<br>* Meets surface mount constraint of project</td>
-<td>* Requires external components and support circuitry for interface<br>* Needs special PCB layout.</td>
-</tr>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a><br>* Option 2. <br>* CTX936TR-ND surface mount oscillator <br>* $1/each <br>* <a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></td>
-<td>* Outputs a square wave <br>* Stable over operating temperature <br> * Direct interface with PSoC (no external circuitry required) range</td>
-<td>* More expensive <br>* Slow shipping speed</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
 <p><strong>6-Axis Inertial Measurement Unit (IMU)</strong></p>
 <ol>
 <li>
@@ -928,7 +787,7 @@
 <td>Tiny 14-pin LGA package</td>
 </tr>
 <tr>
-<td>Compatible with 3.3 V rail</td>
+<td>Compatible with 3.3V rail</td>
 <td>More features than our project application may require</td>
 </tr>
 <tr>
@@ -970,7 +829,7 @@
 <td>More expensive than BMI323</td>
 </tr>
 <tr>
-<td>Compatable with 3.3 V rail</td>
+<td>Compatable with 3.3V rail</td>
 <td>Tiny 14-pin LGA package is difficult to solder/prototype</td>
 </tr>
 <tr>
@@ -1012,7 +871,7 @@
 <td>More expensive than both previous examples</td>
 </tr>
 <tr>
-<td>Compatible with 3.3 V rail</td>
+<td>Compatible with 3.3V rail</td>
 <td>Tiny 14-pin LGA package is difficult to solder/prototype</td>
 </tr>
 <tr>
@@ -1037,6 +896,54 @@
 </ol>
 <p><strong>Choice:</strong> Option 2: BMI270 surface mount accelerometer/gyroscope (6 axis)</p>
 <p><strong>Rationale:</strong> The BMI270 was manufactured with the purpose of wearable applications, such as recognizing human/head motion, making it a striking candidate from the list. Bosch specifically designed this chip for the same purpose our project is meant to portray. the BMI270 also has on-chip any-motion, no-motion, stationary, significant-motion, and activity-change recognition, which lines up incredibly well with that our project is trying to accomplish. Overall, this is our best candidate for a fair price, and there are plenty of units in stock on DigiKey with quick shipping times.</p>
+<hr>
+<p><strong>3.3V Voltage Regulator</strong></p>
+<ol>
+<li>AP2112K-3.3TRG1 surface mount 3.3V regulator</li>
+</ol>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="AP2112K-3.3TRG1.png" data-desc-position="bottom"><img alt="" src="AP2112K-3.3TRG1.png"></a></p>
+<ul>
+<li>$0.28/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/diodes-incorporated/AP2112K-3-3TRG1/4470746">Link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Very inexpensive</td>
+<td>80µA quiescent current</td>
+</tr>
+<tr>
+<td>High 600mA output capacity</td>
+<td>Linear-regulator efficiency loss</td>
+</tr>
+<tr>
+<td>Low dropout voltage</td>
+<td>Limited to 6V maximum</td>
+</tr>
+<tr>
+<td>Built-in overcurrent protection</td>
+<td>Surface-mount package may be more difficult to solder</td>
+</tr>
+<tr>
+<td>Built-in overtemperature protection</td>
+<td>Fixed 3.3V output</td>
+</tr>
+<tr>
+<td>Enable/shutdown control</td>
+<td></td>
+</tr>
+<tr>
+<td>High availability</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 
