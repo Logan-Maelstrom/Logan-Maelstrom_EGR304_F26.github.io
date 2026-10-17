@@ -27,7 +27,7 @@ title: Component Selection Example
 
 **6-Axis Inertial Measurement Unit (IMU)**
 
-1. BMI323 surface mount
+1. BMI323 surface mount accelerometer/gyroscope
 
     ![](BMI323.png)
 
@@ -43,12 +43,12 @@ title: Component Selection Example
     | Built-in motion/orientation detection     |
     | Wide programmable measurement ranges      |
 
-1. CTX936TR-ND surface mount oscillator
+1. BMI270 surface mount accelerometer/gyroscope
 
-    ![](image3.png)
+    ![](BMI323.png)
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+    * $4.23/each
+    * [Link to product](https://www.digikey.com/en/products/detail/bosch-sensortec/BMI270/9974486)
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
