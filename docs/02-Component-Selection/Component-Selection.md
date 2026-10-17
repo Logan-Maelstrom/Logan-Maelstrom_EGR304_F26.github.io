@@ -4,7 +4,7 @@ title: Component Selection Example
 
 **6-Axis Inertial Measurement Unit (IMU)**
 
-1. BMI323 surface mount accelerometer/gyroscope (6 axis)
+1. BMI323 Surface-Mount Accelerometer/Gyroscope/Temperature (6 axis)
 
     ![](BMI323.png)
 
@@ -20,7 +20,7 @@ title: Component Selection Example
     | Built-in motion/orientation detection     |
     | Wide programmable measurement ranges      |
 
-2. BMI270 surface mount accelerometer/gyroscope (6 axis)
+2. BMI270 Surface-Mount Accelerometer/Gyroscope/Temperature (6 axis)
 
     ![](BMI323.png)
 
@@ -36,7 +36,7 @@ title: Component Selection Example
     | Small size/footprint (2.5mm x 3.0mm)                              |
     | Built-in motion detection features                                |
 
-3. LSM6DSMTR surface mount accelerometer/gyroscope/temperature (6 axis)
+3. LSM6DSMTR Surface-Mount Accelerometer/Gyroscope/Temperature (6 axis)
 
     ![](LSM6DSMTR.png)
 
@@ -60,7 +60,7 @@ title: Component Selection Example
 
 **3.3V Voltage Regulator**
 
-1. AP2112K-3.3TRG1 surface mount 3.3V linear regulator
+1. AP2112K-3.3TRG1 Surface-Mount 3.3V LDO Linear Regulator
 
    ![](APK2112K-3.3TRG1.png)
 
@@ -71,13 +71,13 @@ title: Component Selection Example
    | ----------------------------------------------------------------- | ------------------- |
    | Very inexpensive                                                  | 80µA quiescent current     |
    | High 600mA output capacity                                        | Linear-regulator efficiency loss |
-   | Low dropout voltage                                               | Limited to 6V maximum | 
+   | Low dropout voltage                                               | Limited to 6V maximum input voltage | 
    | Built-in overcurrent protection                                   | Surface-mount package may be more difficult to solder |
    | Built-in overtemperature protection                               | Fixed 3.3V output
    | Enable/shutdown control                                           |
    | High availability                                                 |
 
-2. RT9080-33GJ5 through hole 3.3V linear regulator
+2. RT9080-33GJ5 Surface-Mount 3.3V LDO Linear Regulator
 
    ![](RT9080-33GJ5.jpg)
 
@@ -86,7 +86,7 @@ title: Component Selection Example
   
    | Pros                                                              | Cons                |
    | ----------------------------------------------------------------- | ------------------- |
-   | Extremely low 4µA quiescent current                               | 5.5V maximum current     |
+   | Extremely low 4µA quiescent current                               | 5.5V maximum input voltage     |
    | High 600mA output capacity                                        | Higher maximum dropout than AP2112K |
    | 75dB power-supply rejection                                       | Surface-mount package may be more difficult to solder | 
    | Built-in overcurrent protection                                   | Fixed 3.3V output |
@@ -94,3 +94,20 @@ title: Component Selection Example
    | Enable/shutdown control                                           |
    | High availability                                                 |
    | Very inexpensive                                                  |
+
+3. TLV75533PDBVR Surface-Mount 3.3V LDO Linear Regulator
+
+   ![](TLV75533PDBVR.png)
+
+   * $0.42/each
+   * [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/TLV75533PDBVR/9685550)
+  
+   | Pros                                                              | Cons                |
+   | ----------------------------------------------------------------- | ------------------- |
+   | Low 31µA quiescent current                                        | Lower 500mA capacity than other candidates     |
+   | Low 238mV maximum dropout                                         | Higher quiescent current than RT9080 |
+   | Built-in overcurrent protection                                   | 5.5V maximum input | 
+   | Built-in overtemperature protection                               | Fixed 3.3V output |
+   | Wide -40°C to 125°C operating range                               | Linear-regulator efficiency loss
+   | Compact SOT-23-5 package                                          |
+   | High availability                                                 |
