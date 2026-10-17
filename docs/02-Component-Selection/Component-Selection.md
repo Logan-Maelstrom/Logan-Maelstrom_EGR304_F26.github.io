@@ -73,7 +73,7 @@ title: Component Selection Example
    | High 600mA output capacity                                        | Linear-regulator efficiency loss |
    | Low dropout voltage                                               | Limited to 6V maximum input voltage | 
    | Built-in overcurrent protection                                   | Surface-mount package may be more difficult to solder |
-   | Built-in overtemperature protection                               | Fixed 3.3V output
+   | Built-in overtemperature protection                               | Fixed 3.3V output |
    | Enable/shutdown control                                           |
    | High availability                                                 |
 
@@ -90,7 +90,7 @@ title: Component Selection Example
    | High 600mA output capacity                                        | Higher maximum dropout than AP2112K |
    | 75dB power-supply rejection                                       | Surface-mount package may be more difficult to solder | 
    | Built-in overcurrent protection                                   | Fixed 3.3V output |
-   | Built-in overtemperature protection                               | Linear-regulator efficiency loss
+   | Built-in overtemperature protection                               | Linear-regulator efficiency loss |
    | Enable/shutdown control                                           |
    | High availability                                                 |
    | Very inexpensive                                                  |
@@ -108,7 +108,7 @@ title: Component Selection Example
    | Low 238mV maximum dropout                                         | Higher quiescent current than RT9080 |
    | Built-in overcurrent protection                                   | 5.5V maximum input | 
    | Built-in overtemperature protection                               | Fixed 3.3V output |
-   | Wide -40°C to 125°C operating range                               | Linear-regulator efficiency loss
+   | Wide -40°C to 125°C operating range                               | Linear-regulator efficiency loss |
    | Compact SOT-23-5 package                                          |
    | High availability                                                 |
 
@@ -120,11 +120,40 @@ title: Component Selection Example
 
 **5V Voltage Regulator**
 
-1. L7805ACV-DG Through-Hole 5V LDO Linear Regulator
+1. L7805ACV-DG Through-Hole 5V Linear Regulator
 
-   ![](_____.png)
+   ![](L7805ACV-DG.png)
 
    * $1.21/each
    * [Link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ACV-DG/3945937)
   
-   
+   | Pros                                                              | Cons                |
+   | ----------------------------------------------------------------- | ------------------- |
+   | High 1.5A output capacity                                         | High 6mA quiescent current     |
+   | Easy-to-solder through-hole package                               | Poor efficiency for 9V → 5V conversion |
+   | Very simple regulator circuit                                     | Can generate significant heat at higher loads | 
+   | Built-in short-circuit protection                                 | Large TO-220 package |
+   | Built-in overtemperature protection                               | Approximately 2V dropout at 1A |
+   | 35 V maximum input provides large safety margin                   | Fixed 5V output |
+   | Good current availability                                         |
+
+2. LM2575MX-5.0/NOPB Surface-Mount 5V Linear Regulator
+
+   ![](LM2575MX-5.0.NOPB.png)
+
+   * $3.09/each
+   * [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM7805MPX-NOPB/366776)
+  
+   | Pros                                                              | Cons                |
+   | ----------------------------------------------------------------- | ------------------- |
+   | High 1.5A output capacity                                         | High 8mA quiescent current     |
+   | Compact surface-mount package                                     | Poor efficiency for 9V → 5V conversion |
+   | High 80dB power-supply rejection                                  | Can generate significant heat | 
+   | Built-in short-circuit protection                                 | 2V maximum dropout at 1A |
+   | Built-in overtemperature protection                               | Fixed 5V output |
+   | 35 V maximum input                                                | Harder to solder than through-hole candidates |
+   | High availability                                                 |
+
+3. LMR43620R5RPER Surface-Mount Synchronous Buck Regulator
+
+   ![](.png)
