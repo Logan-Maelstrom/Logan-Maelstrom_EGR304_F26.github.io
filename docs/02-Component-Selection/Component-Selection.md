@@ -137,7 +137,7 @@ title: Component Selection Example
    | 35 V maximum input provides large safety margin                   | Fixed 5V output |
    | Good current availability                                         |
 
-2. LM2575MX-5.0/NOPB Surface-Mount 5V Linear Regulator
+2. LM2575MX-5.0/NOPB Surface-Mount 5V Buck (Switching) Regulator
 
    ![](LM2575MX-5.0.NOPB.png)
 
@@ -146,14 +146,32 @@ title: Component Selection Example
   
    | Pros                                                              | Cons                |
    | ----------------------------------------------------------------- | ------------------- |
-   | High 1.5A output capacity                                         | High 8mA quiescent current     |
-   | Compact surface-mount package                                     | Poor efficiency for 9V → 5V conversion |
-   | High 80dB power-supply rejection                                  | Can generate significant heat | 
-   | Built-in short-circuit protection                                 | 2V maximum dropout at 1A |
-   | Built-in overtemperature protection                               | Fixed 5V output |
-   | 35 V maximum input                                                | Harder to solder than through-hole candidates |
-   | High availability                                                 |
+   | More efficient than linear regulators                             | Requires external inductor and capacitors     |
+   | Wide 4–40 V input range                                           | Large 24-pin SOIC package |
+   | High 1 A output capacity                                          | Only 52kHz switching frequency | 
+   | Built-in overcurrent protection                                   | More complex PCB design than linear regulator |
+   | Enable/shutdown control                                           | Switching can introduce electrical noise |
+   | Reduced heat generation vs. linear regulator                      | More expensive than L7805ACV-DG |
+   | Fixed 5V output simplifies configuration                          | Lower output capacity than LMR43620R5RPER |
 
-3. LMR43620R5RPER Surface-Mount Synchronous Buck Regulator
+3. LMR43620R5RPER Surface-Mount 5V Buck (Switching) Regulator
 
-   ![](.png)
+   ![](LMR43620R5RPER.png)
+
+   * $2.27/each
+   * [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LMR43620R5RPER/20414090?s=N4IgTCBcDaIDIFkBKAWAzANjABiQViQAUBRJEAXQF8g)
+  
+   | Pros                                                              | Cons                |
+   | ----------------------------------------------------------------- | ------------------- |
+   | High 2A output capacity                                           | Much more expensive     |
+   | High efficiency compared with linear regulators                   | Requires external inductor and capacitors |
+   | Extremely low 1.3µA quiescent current                             | More complex PCB layout | 
+   | Wide 3–36V input range                                            | Tiny VQFN package is more difficult to hand solder |
+   | Reduced heat generation                                           | Switching regulator can introduce electrical noise |
+   | Compact 2mm × 2mm package                                         | More complex than necessary for light loads |
+   | Built-in overcurrent protection                                   |
+   | Wide −40°C to 150°C operating range                               |
+
+**Choice:** Option 3: LMR43620R5RPER Surface-Mount 5V Buck (Switching) Regulator
+
+**Rationale:** The LMR43620R5RPER is selected because its high efficiency and low power consumption make it the best candidate for our Drowsy Driver Alarm. Unlike the L7805ACV-DG linear regulator, the LMR43620 uses a buck switching design, allowing a 9V input to be stepped down to 5V with significantly less energy being wasted as heat. This is especially beneficial for our wearable design, where excessive heat and unnecessary power consumption should be minimized. The LMR43620 also provides up to 2A of output current, giving our circuit plenty of current capacity, while its small 2mm × 2mm package minimizes PCB space. Although it is more expensive and requires additional external components, its efficiency, low 1.3µA quiescent current, compact size, and reduced heat generation make these tradeoffs worthwhile for our application.
