@@ -2,29 +2,6 @@
 title: Component Selection Example
 ---
 
-## Examples
-
-### Style 1
-
-> This is the example found in the assignment, uses more html
-
-*Table 1: Example component selection*
-
-**External Clock Module**
-
-| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
-| ![](image3.png)<br>\* Option 2. <br>\* CTX936TR-ND surface mount oscillator <br>\* $1/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
-
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
-
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
-
-### Style 2
-
-> Also acceptable, more markdown friendly
-
 **6-Axis Inertial Measurement Unit (IMU)**
 
 1. BMI323 surface mount accelerometer/gyroscope (6 axis)
@@ -37,7 +14,7 @@ title: Component Selection Example
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Low power consumption                     | Tiny 14-pin LGA package                                          |
-    | Compatible with 3.3 V rail                | More features than our project application may require           |
+    | Compatible with 3.3V rail                 | More features than our project application may require           |
     | Supports I²C                              | Requires software/configuration work                             |
     | Small package                             | No integrated magnetometer                                       |
     | Built-in motion/orientation detection     |
@@ -53,7 +30,7 @@ title: Component Selection Example
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
     | Low power consumption                                             | More expensive than BMI323     |
-    | Compatable with 3.3 V rail                                        | Tiny 14-pin LGA package is difficult to solder/prototype |
+    | Compatable with 3.3V rail                                         | Tiny 14-pin LGA package is difficult to solder/prototype |
     | Supports I²C communication                                        | Many wearable features aren't useful for the specific Drowsy Driver Alarm project | 
     | Designed specifically for wearable applications                   | Requires software/configuration to work |
     | Small size/footprint (2.5mm x 3.0mm)                              |
@@ -69,7 +46,7 @@ title: Component Selection Example
     | Pros                                                              | Cons                | 
     | ----------------------------------------------------------------- | ------------------- |
     | Low power consumption                                             | More expensive than both previous examples
-    | Compatible with 3.3 V rail                                        | Tiny 14-pin LGA package is difficult to solder/prototype |
+    | Compatible with 3.3V rail                                         | Tiny 14-pin LGA package is difficult to solder/prototype |
     | Supports I²C communication                                        | Older-generation IMU design | 
     | Built-in tilt detection and significant motion detection          | No I3C interface    |
     | High mechanical-shock robustness                                  | OIS/EIS features are unnecessary for our Drowsy Driver Alarm project |
@@ -78,3 +55,24 @@ title: Component Selection Example
 **Choice:** Option 2: BMI270 surface mount accelerometer/gyroscope (6 axis)
 
 **Rationale:** The BMI270 was manufactured with the purpose of wearable applications, such as recognizing human/head motion, making it a striking candidate from the list. Bosch specifically designed this chip for the same purpose our project is meant to portray. the BMI270 also has on-chip any-motion, no-motion, stationary, significant-motion, and activity-change recognition, which lines up incredibly well with that our project is trying to accomplish. Overall, this is our best candidate for a fair price, and there are plenty of units in stock on DigiKey with quick shipping times.
+
+----
+
+**3.3V Voltage Regulator**
+
+1. AP2112K-3.3TRG1 surface mount 3.3V regulator
+
+   ![](AP2112K-3.3TRG1.png)
+
+   * $0.28/each
+   * [Link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP2112K-3-3TRG1/4470746)
+  
+   | Pros                                                              | Cons                |
+   | ----------------------------------------------------------------- | ------------------- |
+   | Very inexpensive                                                  | 80µA quiescent current     |
+   | High 600mA output capacity                                        | Linear-regulator efficiency loss |
+   | Low dropout voltage                                               | Limited to 6V maximum | 
+   | Built-in overcurrent protection                                   | Surface-mount package may be more difficult to solder |
+   | Built-in overtemperature protection                               | Fixed 3.3V output
+   | Enable/shutdown control                                           |
+   | High availability                                                 |
