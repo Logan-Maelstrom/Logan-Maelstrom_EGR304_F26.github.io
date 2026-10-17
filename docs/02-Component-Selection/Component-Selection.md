@@ -111,3 +111,20 @@ title: Component Selection Example
    | Wide -40°C to 125°C operating range                               | Linear-regulator efficiency loss
    | Compact SOT-23-5 package                                          |
    | High availability                                                 |
+
+**Choice:** Option 2: RT9080-33GJ5 Surface-Mount 3.3V LDO Linear Regulator
+
+**Rationale:** The RT9080-33GJ5 by Richtek has the lowest quiescent current of the candidates, being 4µA. Additionally, it still gives 600mA of maximum output current and is very affordable. Low power consumption is important for the Drowsy Driver Alarm project since the product is intended to be wearable. This LDO also provides exceptional protections built-in, such as overcurrent and overtemperature protection. Although its maximum input voltage is lower than other candidates like the AP2112K, this isn't a signifcant trade-off since the RT9080 can be powered by the system's 5V rail. Overall, this inexpensive LDO is exceptionally capable for our product's needs.
+
+----
+
+**5V Voltage Regulator**
+
+1. L7805ACV-DG Through-Hole 5V LDO Linear Regulator
+
+   ![](_____.png)
+
+   * $1.21/each
+   * [Link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805ACV-DG/3945937)
+  
+   
