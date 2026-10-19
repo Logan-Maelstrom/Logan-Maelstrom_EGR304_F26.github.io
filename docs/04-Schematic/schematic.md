@@ -13,4 +13,4 @@ This schematic is design to utilize the embedded 6-axis IMU to detect head movem
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](LoganMaelstromSubsystemDesign.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*](LoganMaelstromSubsystemDesign.pdf), and the Zip folder of the project [*here*](LoganMaelstromSubsystemDesignZIP.zip).
