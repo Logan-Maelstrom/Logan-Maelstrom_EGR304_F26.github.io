@@ -4,13 +4,13 @@ title: Schematic
 
 ## Overview
 
-This schematic is design to support .... (highlight functionally, power, and controller).
+This schematic is design to utilize the embedded 6-axis IMU to detect head movements (rotation and acceleration) and send signals to the Curiosity Nano for the microcontroller to discern if the drowsy driver alarm should be deployed or not. The system contains voltage regulators to step down 9V to 5V to power the Curiosity Nano, and 5V to 3.3V to power the IMU.
 
 
-![schematic](Screenshot.png){style width:"350" height:"300;"}
-**Figure ##:** Showing a example schematic.
+![schematic](LoganMaelstromSubsystemDesign.png){style width:"350" height:"300;"}
+**Figure ##:** Subsystem Design Schematic for IMU.
 
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](ExampleSchematic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*](LoganMaelstromSubsystemDesign.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
