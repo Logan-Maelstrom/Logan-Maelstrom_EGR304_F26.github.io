@@ -959,9 +959,7 @@
 <p><strong>Rationale:</strong> The BMI270 was manufactured with the purpose of wearable applications, such as recognizing human/head motion, making it a striking candidate from the list. Bosch specifically designed this chip for the same purpose our project is meant to portray. the BMI270 also has on-chip any-motion, no-motion, stationary, significant-motion, and activity-change recognition, which lines up incredibly well with that our project is trying to accomplish. Overall, this is our best candidate for a fair price, and there are plenty of units in stock on DigiKey with quick shipping times.</p>
 <hr>
 <p><strong>3.3V Voltage Regulator</strong></p>
-<ol>
-<li>AP2112K-3.3TRG1 Surface-Mount 3.3V LDO Linear Regulator</li>
-</ol>
+<p><em>1. AP2112K-3.3TRG1 Surface-Mount 3.3V LDO Linear Regulator</em></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../APK2112K-3.3TRG1.png" data-desc-position="bottom"><img alt="" src="../APK2112K-3.3TRG1.png"></a></p>
 <ul>
 <li>$0.28/each</li>
@@ -1005,9 +1003,7 @@
 </tr>
 </tbody>
 </table>
-<ol>
-<li>RT9080-33GJ5 Surface-Mount 3.3V LDO Linear Regulator</li>
-</ol>
+<p><em>2. RT9080-33GJ5 Surface-Mount 3.3V LDO Linear Regulator</em></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../RT9080-33GJ5.jpg" data-desc-position="bottom"><img alt="" src="../RT9080-33GJ5.jpg"></a></p>
 <ul>
 <li>$0.28/each</li>
@@ -1055,9 +1051,7 @@
 </tr>
 </tbody>
 </table>
-<ol>
-<li>TLV75533PDBVR Surface-Mount 3.3V LDO Linear Regulator</li>
-</ol>
+<p><em>3. TLV75533PDBVR Surface-Mount 3.3V LDO Linear Regulator</em></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TLV75533PDBVR.png" data-desc-position="bottom"><img alt="" src="../TLV75533PDBVR.png"></a></p>
 <ul>
 <li>$0.42/each</li>
@@ -1105,9 +1099,7 @@
 <p><strong>Rationale:</strong> The RT9080-33GJ5 by Richtek has the lowest quiescent current of the candidates, being 4µA. Additionally, it still gives 600mA of maximum output current and is very affordable. Low power consumption is important for the Drowsy Driver Alarm project since the product is intended to be wearable. This LDO also provides exceptional protections built-in, such as overcurrent and overtemperature protection. Although its maximum input voltage is lower than other candidates like the AP2112K, this isn't a signifcant trade-off since the RT9080 can be powered by the system's 5V rail. Overall, this inexpensive LDO is exceptionally capable for our product's needs.</p>
 <hr>
 <p><strong>5V Voltage Regulator</strong></p>
-<ol>
-<li>L7805ACV-DG Through-Hole 5V Linear Regulator</li>
-</ol>
+<p><em>1. L7805ACV-DG Through-Hole 5V Linear Regulator</em></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../L7805ACV-DG.png" data-desc-position="bottom"><img alt="" src="../L7805ACV-DG.png"></a></p>
 <ul>
 <li>$1.21/each</li>
@@ -1151,9 +1143,7 @@
 </tr>
 </tbody>
 </table>
-<ol>
-<li>LM2575MX-5.0/NOPB Surface-Mount 5V Buck (Switching) Regulator</li>
-</ol>
+<p><em>2. LM2575MX-5.0/NOPB Surface-Mount 5V Buck (Switching) Regulator</em></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../LM2575MX-5.0.NOPB.png" data-desc-position="bottom"><img alt="" src="../LM2575MX-5.0.NOPB.png"></a></p>
 <ul>
 <li>$3.09/each</li>
@@ -1197,9 +1187,7 @@
 </tr>
 </tbody>
 </table>
-<ol>
-<li>LMR43620R5RPER Surface-Mount 5V Buck (Switching) Regulator</li>
-</ol>
+<p><em>3. LMR43620R5RPER Surface-Mount 5V Buck (Switching) Regulator</em></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../LMR43620R5RPER.png" data-desc-position="bottom"><img alt="" src="../LMR43620R5RPER.png"></a></p>
 <ul>
 <li>$2.27/each</li>
@@ -1247,13 +1235,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Choice:</strong> Option 3: LMR43620R5RPER Surface-Mount 5V Buck (Switching) Regulator</p>
-<p><strong>Rationale:</strong> The LMR43620R5RPER by Texas Instruments is selected because its high efficiency and low power consumption make it the best candidate for our Drowsy Driver Alarm. Unlike the L7805ACV-DG linear regulator, the LMR43620 uses a buck switching design, allowing a 9V input to be stepped down to 5V with significantly less energy being wasted as heat. This is especially beneficial for our wearable design, where excessive heat and unnecessary power consumption should be minimized. The LMR43620 also provides up to 2A of output current, giving our circuit plenty of current capacity, while its small 2mm × 2mm package minimizes PCB space. Although it is more expensive and requires additional external components, its efficiency, low 1.3µA quiescent current, compact size, and reduced heat generation make these tradeoffs worthwhile for our application.</p>
+<p><strong>Choice:</strong> Option 1: L7805ACV-DG Through-Hole 5V Linear Regulator</p>
+<p><strong>Rationale:</strong> The L7805 was selected to regulate the 9 V external supply down to the 5 V rail required by the subsystem. It provides a simple and well-established 5 V regulation solution with minimal supporting circuitry. Although a switching regulator can provide greater efficiency, the L7805 offers a straightforward implementation that is sufficient for the expected current requirements of this subsystem. The resulting 5 V rail powers the Curiosity Nano and also supplies the RT9080-33GJ5 3.3 V regulator.</p>
 <hr>
 <p><strong>9V External Power Source</strong></p>
-<ol>
-<li>Microchip AC002014 - 9V External Power Supply, 800mA</li>
-</ol>
+<p><em>1. Microchip AC002014 - 9V External Power Supply, 800mA</em></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../AC002014.jpg" data-desc-position="bottom"><img alt="" src="../AC002014.jpg"></a></p>
 <ul>
 <li>$25.49/each</li>
@@ -1297,9 +1283,7 @@
 </tr>
 </tbody>
 </table>
-<ol>
-<li>UNIIVE UV313-0913 9V External Power Supply</li>
-</ol>
+<p><em>2. UNIIVE UV313-0913 9V External Power Supply</em></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../UV313-0913.jpg" data-desc-position="bottom"><img alt="" src="../UV313-0913.jpg"></a></p>
 <ul>
 <li>$17.40/each</li>
@@ -1347,9 +1331,7 @@
 </tr>
 </tbody>
 </table>
-<ol>
-<li>Bel Power Solutions SMI18-9-V-P6R</li>
-</ol>
+<p><em>3. Bel Power Solutions SMI18-9-V-P6R</em></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../SMI18-9-V-P6R.jpg" data-desc-position="bottom"><img alt="" src="../SMI18-9-V-P6R.jpg"></a></p>
 <ul>
 <li>$30.27/each</li>
