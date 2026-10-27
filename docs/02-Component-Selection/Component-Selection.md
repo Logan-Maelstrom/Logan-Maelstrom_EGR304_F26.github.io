@@ -60,7 +60,7 @@ Component Selection
 
 **3.3V Voltage Regulator**
 
-1. AP2112K-3.3TRG1 Surface-Mount 3.3V LDO Linear Regulator
+*1. AP2112K-3.3TRG1 Surface-Mount 3.3V LDO Linear Regulator*
 
    ![](APK2112K-3.3TRG1.png)
 
@@ -77,7 +77,7 @@ Component Selection
    | Enable/shutdown control                                           |
    | High availability                                                 |
 
-2. RT9080-33GJ5 Surface-Mount 3.3V LDO Linear Regulator
+*2. RT9080-33GJ5 Surface-Mount 3.3V LDO Linear Regulator*
 
    ![](RT9080-33GJ5.jpg)
 
@@ -95,7 +95,7 @@ Component Selection
    | High availability                                                 |
    | Very inexpensive                                                  |
 
-3. TLV75533PDBVR Surface-Mount 3.3V LDO Linear Regulator
+*3. TLV75533PDBVR Surface-Mount 3.3V LDO Linear Regulator*
 
    ![](TLV75533PDBVR.png)
 
@@ -120,7 +120,7 @@ Component Selection
 
 **5V Voltage Regulator**
 
-1. L7805ACV-DG Through-Hole 5V Linear Regulator
+*1. L7805ACV-DG Through-Hole 5V Linear Regulator*
 
    ![](L7805ACV-DG.png)
 
@@ -137,7 +137,7 @@ Component Selection
    | 35 V maximum input provides large safety margin                   | Fixed 5V output |
    | Good current availability                                         |
 
-2. LM2575MX-5.0/NOPB Surface-Mount 5V Buck (Switching) Regulator
+*2. LM2575MX-5.0/NOPB Surface-Mount 5V Buck (Switching) Regulator*
 
    ![](LM2575MX-5.0.NOPB.png)
 
@@ -154,7 +154,7 @@ Component Selection
    | Reduced heat generation vs. linear regulator                      | More expensive than L7805ACV-DG |
    | Fixed 5V output simplifies configuration                          | Lower output capacity than LMR43620R5RPER |
 
-3. LMR43620R5RPER Surface-Mount 5V Buck (Switching) Regulator
+*3. LMR43620R5RPER Surface-Mount 5V Buck (Switching) Regulator*
 
    ![](LMR43620R5RPER.png)
 
@@ -172,15 +172,15 @@ Component Selection
    | Built-in overcurrent protection                                   |
    | Wide −40°C to 150°C operating range                               |
 
-**Choice:** Option 3: LMR43620R5RPER Surface-Mount 5V Buck (Switching) Regulator
+**Choice:** Option 1: L7805ACV-DG Through-Hole 5V Linear Regulator
 
-**Rationale:** The LMR43620R5RPER by Texas Instruments is selected because its high efficiency and low power consumption make it the best candidate for our Drowsy Driver Alarm. Unlike the L7805ACV-DG linear regulator, the LMR43620 uses a buck switching design, allowing a 9V input to be stepped down to 5V with significantly less energy being wasted as heat. This is especially beneficial for our wearable design, where excessive heat and unnecessary power consumption should be minimized. The LMR43620 also provides up to 2A of output current, giving our circuit plenty of current capacity, while its small 2mm × 2mm package minimizes PCB space. Although it is more expensive and requires additional external components, its efficiency, low 1.3µA quiescent current, compact size, and reduced heat generation make these tradeoffs worthwhile for our application.
+**Rationale:** The L7805 was selected to regulate the 9 V external supply down to the 5 V rail required by the subsystem. It provides a simple and well-established 5 V regulation solution with minimal supporting circuitry. Although a switching regulator can provide greater efficiency, the L7805 offers a straightforward implementation that is sufficient for the expected current requirements of this subsystem. The resulting 5 V rail powers the Curiosity Nano and also supplies the RT9080-33GJ5 3.3 V regulator.
 
 ----
 
 **9V External Power Source**
 
-1. Microchip AC002014 - 9V External Power Supply, 800mA
+*1. Microchip AC002014 - 9V External Power Supply, 800mA*
 
    ![](AC002014.jpg)
 
@@ -197,7 +197,7 @@ Component Selection
    | Commercial Class II wall supply                                   | 
    | Currently in stock                                                |
 
-2. UNIIVE UV313-0913 9V External Power Supply
+*2. UNIIVE UV313-0913 9V External Power Supply*
 
    ![](UV313-0913.jpg)
 
@@ -215,7 +215,7 @@ Component Selection
    | Long 1.5m output cable                                            |
    | Currently in stock                                                |
 
-3. Bel Power Solutions SMI18-9-V-P6R
+*3. Bel Power Solutions SMI18-9-V-P6R*
 
    ![](SMI18-9-V-P6R.jpg)
 
