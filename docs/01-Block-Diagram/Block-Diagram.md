@@ -11,7 +11,7 @@ The purpose of this block diagram is to provide a clear overview of the systemâ€
 
 ## Block Diagram
 <p align="center">
-  <img src="Logan Maelstrom - IMU Subsystem (block diagram).png"
+  <img src="logan-imu-block-diagram.png"
     alt="Logan Maelstrom - IMU Subsystem Block Diagram
     width="722">
 </p>
