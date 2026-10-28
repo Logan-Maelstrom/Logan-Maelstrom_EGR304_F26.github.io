@@ -236,3 +236,9 @@ Component Selection
 **Choice:** Option 2: UNIIVE UV313-0913 9V External Power Supply
 
 **Rationale:** The UV313-0913 was selected because it provides the best balance of output capacity, price, efficiency, and availability for our Drowsy Driver Alarm project. Its 1.3A output provides more current headroom than the 800mA Microchip supply while costing significantly less. Although the Bel Power Solutions supply can provide 2.2A, that additional capacity is likely unnecessary for our system and comes at a considerably higher price. The UV313-0913 also supports universal 100–240 VAC input, has multiple safety certifications, and has low no-load power consumption. Overall, it provides sufficient power for the system without paying for unnecessary excess capacity.
+
+----
+
+### Overall Selection Rational
+
+The final components were selected by comparing each candidate's electrical requirements, functionality, power consumption, cost, availability, and suitability for a wearable drowsy-driver system. The BMI270 provides the required acceleration and gyroscope measurements for detecting head movement, while the PIC18F57Q43 processes the sensor data and interfaces with the other team subsystems. The L7805ACV-DG and RT9080-33GJ5 provide the required 5V and 3.3V power rails from the selected 9V external supply. Together, these selections meet the subsystem's sensing, processing, power, and team-interface requirements while keeping the design practical for implementation.
