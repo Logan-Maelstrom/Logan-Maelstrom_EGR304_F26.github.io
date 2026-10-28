@@ -3,22 +3,17 @@ title: Power Budget
 ---
 
 ## Overview
-(THIS IS CURRENTLY BLANK AND WILL BE WORKED ON. BELOW IS THE DEFAULT EXAMPLE)
 
-Write a overview of what you did and why you did a Power Budget.
+This power budget was created to verify that the selected power source and voltage regulators can provide sufficient power for the IMU subsystem. The PIC18F57Q43 Curiosity Nano operates from the 5V rail, while the BMI270 IMU operates from the 3.3V rail. Maximum current requirements were evaluated with a 25% safety margin to ensure that the selected regulators and 9V external power supply provide adequate capacity for the subsystem.
 
-> Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
 
-![budget1](budgetPg1.png){style width:"350" height:"300;"}
+![budget1](PowerBudget-LoganMaelstrom.png){style width:"350" height:"300;"}
 
-![budget2](budgetPg2.png){style width:"350" height:"300;"}
-
-![budget3](budgetPg3.png){style width:"350" height:"300;"}
 
 ## Conclusions
 
-From the prepare Power Budget, .....
+The completed power budget confirms that the selected power system provides sufficient current for the IMU subsystem. The L7805ACV-DG and RT9080-33GJ5 provide adequate capacity for the 5V and 3.3V rails respectively, including the required 25% safety margin. The selected 9V 1.3A external power supply also provides sufficient capacity for the subsystem, confirming that the selected power components meet the design requirements.
 
 ## Resouces
 
-The power budget as a PDF download is available [*here*](PowerBudgetExample.pdf), and a Microsoft Excel Sheet [*here*](PowerBudgetExample.xlsx).
+The power budget as a PDF download is available [*here*](PowerBudget-LoganMaelstrom.pdf), and a Microsoft Excel Sheet [*here*](PowerBudget-LoganMaelstrom.xlsx).
