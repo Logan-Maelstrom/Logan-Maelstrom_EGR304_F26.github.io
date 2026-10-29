@@ -11,9 +11,9 @@ The Bill of Materials (BOM) documents the components required to construct the I
 > To access the vendor and datasheet links for the listed components, please download and view the BOM Excel (.xlsx) file.
 
 
-## Bill of Materials Example (as Image)
+## Bill of Materials
 ![](SubSystemBOMv2.png){style width: "2000"}
-**Figure 2:** IMU Subsystem Bill of Materials
+**Figure 1:** IMU Subsystem - Bill of Materials
 
 
 ## Resources
