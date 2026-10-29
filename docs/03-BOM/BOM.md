@@ -12,7 +12,7 @@ The Bill of Materials (BOM) documents the components required to construct the I
 
 
 ## Bill of Materials Example (as Image)
-![](SubSystemBOM.png){style width: "2000"}
+![](SubSystemBOMv2.png){style width: "2000"}
 **Figure 2:** IMU Subsystem Bill of Materials
 
 
