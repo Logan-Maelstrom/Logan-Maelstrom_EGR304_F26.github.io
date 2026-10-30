@@ -19,5 +19,5 @@ The Bill of Materials (BOM) documents the components required to construct the I
 ## Resources
 The completed Bill of Materials is available in the following formats:
 
-- [View or download the IMU Subsystem BOM PDF](SubsystemDesignBOM.pdf)
-- [Download the editable IMU Subsystem BOM Excel file](SubsystemDesignBOM.xlsx)
+- [View or download the IMU Subsystem BOM PDF](IMU_SubsystemDesignBOM.pdf)
+- [Download the editable IMU Subsystem BOM Excel file](IMU_SubsystemDesignBOM.xlsx)
