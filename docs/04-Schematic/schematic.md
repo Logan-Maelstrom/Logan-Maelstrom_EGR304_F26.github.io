@@ -9,7 +9,7 @@ This schematic is designed to utilize the embedded 6-axis IMU to detect head mov
 > [!NOTE]
 > The schematic image should be displayed below. If it's not shown, the schematic PDF can be downloaded and opened at the bottom of this page.
 
-![](EGRLoganMaelstrom-SDSchematic.png)
+![](IMU_SchematicFINAL.png)
 
 **Figure 1:** Subsystem Design Schematic for IMU.
 
