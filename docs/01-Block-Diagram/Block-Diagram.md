@@ -10,7 +10,7 @@ The purpose of this block diagram is to provide a clear overview of the systemâ€
 
 
 ## Block Diagram
-![](logan-imu-block-diagram.png)
+![](IMU_BlockDiagramFINAL.png)
 
 <p align="center">Individual Block Diagram - Logan Maelstrom</p>
 
