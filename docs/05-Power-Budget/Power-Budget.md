@@ -7,7 +7,7 @@ title: Power Budget
 This power budget was created to verify that the selected power source and voltage regulators can provide sufficient power for the IMU subsystem. The PIC18F57Q43 Curiosity Nano operates from the 5V rail, while the BMI270 IMU operates from the 3.3V rail. Maximum current requirements were evaluated with a 25% safety margin to ensure that the selected regulators and 9V external power supply provide adequate capacity for the subsystem.
 
 
-![budget1](PowerBudget-LoganMaelstrom.png){style width:"350" height:"300;"}
+![budget1](IMU_PowerBudgetFINAL1.png){style width:"350" height:"300;"}
 
 
 ## Conclusions
