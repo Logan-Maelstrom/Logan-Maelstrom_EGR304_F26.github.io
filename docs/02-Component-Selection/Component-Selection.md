@@ -199,7 +199,7 @@ Component Selection
 
 *2. (Classroom Stock) Model 0930 9V 3A External Power Supply*
 
-   <img src="classroom_stock_9V_3A.jpg" width="200">
+   ![](UV313-0913.jpg)
 
    * $0.00/each - (Classroom Stock)
    * Product link unavailable - (Classroom Stock)
