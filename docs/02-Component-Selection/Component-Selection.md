@@ -197,23 +197,22 @@ Component Selection
    | Commercial Class II wall supply                                   | 
    | Currently in stock                                                |
 
-*2. UNIIVE UV313-0913 9V External Power Supply*
+*2. (Classroom Stock) Model 0930 9V 3A External Power Supply*
 
-   ![](UV313-0913.jpg)
+   <img src="classroom_stock_9V_3A.jpg" width="200">
 
-   * $17.40/each
-   * [Link to product](https://www.digikey.com/en/products/detail/unifive-global-limited/UV313-0913/26420296)
+   * $0.00/each - (Classroom Stock)
+   * Product link unavailable - (Classroom Stock)
   
    | Pros                                                              | Cons                |
    | ----------------------------------------------------------------- | ------------------- |
-   | Lowest price of the three candidates                              | Lower output capacity than 2.2A Bel Power Solutions candidate     |
-   | Higher 1.3A output capacity                                       | Fixed US-style AC plug |
-   | Universal 100–240 VAC input                                       | No interchangeable AC plug blades | 
-   | 82.96% efficiency                                                 | 2.1mm ID requires matching barrel jack |
-   | Low 100mW no-load consumption                                     | Limited 0–40°C operating range |
-   | Safety approvals: CB, CE, cULus, FCC                              | 
-   | Long 1.5m output cable                                            |
-   | Currently in stock                                                |
+   | Provides required 9V output                                       | Manufacturer information not available     |
+   | 3A maximum output capacity provides substantial current headroom  | Fixed US-style AC plug |
+   | Universal 100–240 VAC input                                       | No manufacturer product page or datasheet available | 
+   | 50/60 Hz AC input compatibility                                   | Specifications are limited to information printed on the adapter |
+   | No additional purchase required                                         | No documented efficiency information available |
+   | Already available as classroom stock                              | 
+   | Long output cable is sufficient                                   |
 
 *3. Bel Power Solutions SMI18-9-V-P6R*
 
@@ -233,9 +232,9 @@ Component Selection
    | Long 1.5m output cable                                            |
    | Extensive international safety approvals                          |
 
-**Choice:** Option 2: UNIIVE UV313-0913 9V External Power Supply
+**Choice:** Option 2: (Classroom Stock) Model 0930 9V 3A External Power Supply
 
-**Rationale:** The UV313-0913 was selected because it provides the best balance of output capacity, price, efficiency, and availability for our Drowsy Driver Alarm project. Its 1.3A output provides more current headroom than the 800mA Microchip supply while costing significantly less. Although the Bel Power Solutions supply can provide 2.2A, that additional capacity is likely unnecessary for our system and comes at a considerably higher price. The UV313-0913 also supports universal 100–240 VAC input, has multiple safety certifications, and has low no-load power consumption. Overall, it provides sufficient power for the system without paying for unnecessary excess capacity.
+**Rationale:** The classroom-stock Model 0930 AC/DC adapter was selected because it provides the required 9V output while offering up to 3A of available current. The adapter accepts 100–240 VAC at 50/60 Hz, making it compatible with standard AC power sources. Its 3A output capacity provides sufficient current headroom for the subsystem while the circuit draws only the current required by its loads. Because the adapter is already available as classroom stock, it also eliminates the cost and lead time associated with purchasing an additional external power supply. The available adapter label does not identify a manufacturer or provide a product datasheet, so the documented specifications are based on the information printed directly on the physical adapter.
 
 ----
 
