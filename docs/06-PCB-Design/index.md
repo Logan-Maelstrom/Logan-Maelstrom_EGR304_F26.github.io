@@ -23,7 +23,7 @@ This PCB implements my individual subsystem for the Team 104 Drowsy Driver Alarm
 
 ### ECAD Project Files
 
-- [Complete KiCad Project ZIP](...)
+- [Complete KiCad Project ZIP](Logan%20Maelstrom%20-%20Subsystem%20Design.zip)
 
 ### Manufacturing Files
 
