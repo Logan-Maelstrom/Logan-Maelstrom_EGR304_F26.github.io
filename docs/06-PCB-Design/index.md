@@ -14,15 +14,12 @@ This PCB implements my individual subsystem for the Team 104 Drowsy Driver Alarm
 | ![Front PCB Layout](IMU_Subsystem_PCB_Front.png) | ![Back PCB Layout](IMU_Subsystem_PCB_Back.png) |
 
 
----
-
-
 ## Design Files
 
 ### PCB Layout PDFs
 
-- [Front PCB Layout PDF](...)
-- [Back PCB Layout PDF](...)
+- [Front PCB Layout PDF](IMU_Subsystem_PCB_Front.pdf)
+- [Back PCB Layout PDF](IMU_Subsystem_PCB_Back.pdf)
 
 ### ECAD Project Files
 
