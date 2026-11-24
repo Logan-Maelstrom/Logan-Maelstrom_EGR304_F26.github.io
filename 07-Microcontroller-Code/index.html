@@ -24,7 +24,7 @@
 
     
       
-        <title>Microcontroller Code - EGR 304 Logan Maelstrom Data Sheet</title>
+        <title>Microcontroller Code - IMU Subsystem - EGR 304 Logan Maelstrom Data Sheet</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#microcontroller-code" class="md-skip">
+        <a href="#microcontroller-code-imu-subsystem" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Microcontroller Code
+              Microcontroller Code - IMU Subsystem
             
           </span>
         </div>
@@ -783,6 +783,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#pin-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pin Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firmware Verification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bmi270-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      BMI270 Communication
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller Code
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -804,8 +848,123 @@
   
 
 
-<h1 id="microcontroller-code">Microcontroller Code</h1>
-<p>Microcontroller code for subsystem verification is currently under development.</p>
+<h1 id="microcontroller-code-imu-subsystem">Microcontroller Code - IMU Subsystem</h1>
+<p>The IMU subsystem is controlled by a Microchip PIC18F57Q43 Curiosity Nano programmed using MPLAB X IDE and MPLAB Code Configurator (MCC).</p>
+<p>The subsystem receives a 0–5 V digital enable signal from the team interface. When the subsystem is enabled, the microcontroller monitors a BMI270 accelerometer/gyroscope using I²C communication. When the programmed motion-detection criteria are satisfied, the microcontroller asserts the required 0–5 V digital team output signals.</p>
+<h2 id="pin-configuration">Pin Configuration</h2>
+<p>The following PIC18F57Q43 pins are used by the IMU subsystem:</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>PIC Pin</th>
+<th>Direction</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BMI270 SDA</td>
+<td>RB2</td>
+<td>I/O</td>
+<td>I²C data connection to BMI270</td>
+</tr>
+<tr>
+<td>BMI270 SCL</td>
+<td>RB1</td>
+<td>I/O</td>
+<td>I²C clock connection to BMI270</td>
+</tr>
+<tr>
+<td>HAN_INPUT</td>
+<td>RA0</td>
+<td>Input</td>
+<td>Digital enable signal from Hannah's subsystem</td>
+</tr>
+<tr>
+<td>MAT_OUTPUT</td>
+<td>RD2</td>
+<td>Output</td>
+<td>Digital output to Matthew's subsystem</td>
+</tr>
+<tr>
+<td>YAZ_OUTPUT</td>
+<td>RD5</td>
+<td>Output</td>
+<td>Digital output to Yazmin's subsystem</td>
+</tr>
+<tr>
+<td>TEAM_EXTRA_OUTPUT</td>
+<td>RF1</td>
+<td>Output</td>
+<td>Revised team GPIO connection</td>
+</tr>
+<tr>
+<td>DEBUG_LED</td>
+<td>RD0</td>
+<td>Output</td>
+<td>Firmware/debug indication</td>
+</tr>
+<tr>
+<td>DEBUG_BUTTON</td>
+<td>RD1</td>
+<td>Input</td>
+<td>Development and hardware-test input</td>
+</tr>
+</tbody>
+</table>
+<h2 id="firmware-verification">Firmware Verification</h2>
+<p>Before final PCB assembly, the team-interface GPIO logic was tested directly using the PIC18F57Q43 Curiosity Nano.</p>
+<p>For this test, <code>HAN_INPUT</code> represented the external subsystem-enable signal and <code>DEBUG_BUTTON</code> temporarily simulated an IMU detection event.</p>
+<table>
+<thead>
+<tr>
+<th>HAN_INPUT</th>
+<th>Simulated IMU Event</th>
+<th>Team Outputs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LOW</td>
+<td>LOW</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>HIGH</td>
+<td>LOW</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>LOW</td>
+<td>HIGH</td>
+<td>LOW</td>
+</tr>
+<tr>
+<td>HIGH</td>
+<td>HIGH</td>
+<td>HIGH</td>
+</tr>
+</tbody>
+</table>
+<p>With both test inputs HIGH and the Curiosity Nano operating at the required 5 V, <code>MAT_OUTPUT</code>, <code>YAZ_OUTPUT</code>, and <code>TEAM_EXTRA_OUTPUT</code> each measured approximately <strong>5.01 V</strong> with a digital multimeter.</p>
+<p>When either input was LOW, the team outputs remained LOW.</p>
+<h2 id="bmi270-communication">BMI270 Communication</h2>
+<p>The BMI270 accelerometer/gyroscope communicates with the PIC18F57Q43 through the I²C1 peripheral.</p>
+<p>The firmware includes support for:</p>
+<ul>
+<li>BMI270 register reads and writes</li>
+<li>BMI270 chip-ID verification</li>
+<li>Multi-byte I²C reads</li>
+<li>Raw X/Y/Z accelerometer measurements</li>
+<li>Raw X/Y/Z gyroscope measurements</li>
+<li>I²C communication error and timeout handling</li>
+</ul>
+<p>The BMI270 uses the 7-bit I²C address <code>0x68</code>.</p>
+<p>Final BMI270 hardware communication, initialization, and motion-detection calibration will be verified using the assembled subsystem PCB.</p>
+<h2 id="microcontroller-code">Microcontroller Code</h2>
+<p>The MPLAB X project used for the final subsystem hardware verification will be provided as a packaged ZIP archive.</p>
+<p><strong>Final MPLAB X project:</strong> To be uploaded after final hardware verification.</p>
 
 
 
