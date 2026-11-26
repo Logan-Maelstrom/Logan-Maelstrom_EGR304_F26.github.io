@@ -10,7 +10,7 @@ The purpose of this block diagram is to provide a clear overview of the systemâ€
 
 
 ## Block Diagram
-![](BlockDiagram-11-23-26.png)
+![](BlockDiagram-11-25-26.png)
 
 <p align="center">Individual Block Diagram - Logan Maelstrom</p>
 
