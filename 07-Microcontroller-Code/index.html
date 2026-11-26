@@ -790,6 +790,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
+  <a href="#assembled-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembled PCB
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pin-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       Pin Configuration
@@ -851,6 +860,16 @@
 <h1 id="microcontroller-code-imu-subsystem">Microcontroller Code - IMU Subsystem</h1>
 <p>The IMU subsystem is controlled by a Microchip PIC18F57Q43 Curiosity Nano programmed using MPLAB X IDE and MPLAB Code Configurator (MCC).</p>
 <p>The subsystem receives a 0–5 V digital enable signal from the team interface. When the subsystem is enabled, the microcontroller monitors a BMI270 accelerometer/gyroscope using I²C communication. When the programmed motion-detection criteria are satisfied, the microcontroller asserts the required 0–5 V digital team output signals.</p>
+<h2 id="assembled-pcb">Assembled PCB</h2>
+<p>The completed IMU subsystem PCB is shown below.</p>
+<p align="center">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="IMU_Subsystem_Assembled_PCB.jpeg" data-desc-position="bottom"><img src="IMU_Subsystem_Assembled_PCB.jpeg" alt="Assembled IMU Subsystem PCB" width="700"></a>
+</p>
+
+<p align="center">
+  <em>Figure 1: Assembled IMU subsystem PCB.</em>
+</p>
+
 <h2 id="pin-configuration">Pin Configuration</h2>
 <p>The following PIC18F57Q43 pins are used by the IMU subsystem:</p>
 <table>
