@@ -4,6 +4,18 @@ The IMU subsystem is controlled by a Microchip PIC18F57Q43 Curiosity Nano progra
 
 The subsystem receives a 0–5 V digital enable signal from the team interface. When the subsystem is enabled, the microcontroller monitors a BMI270 accelerometer/gyroscope using I²C communication. When the programmed motion-detection criteria are satisfied, the microcontroller asserts the required 0–5 V digital team output signals.
 
+## Assembled PCB
+
+The completed IMU subsystem PCB is shown below.
+
+<p align="center">
+  <img src="IMU_Subsystem_Assembled_PCB.jpeg" alt="Assembled IMU Subsystem PCB" width="700">
+</p>
+
+<p align="center">
+  <em>Figure 1: Assembled IMU subsystem PCB.</em>
+</p>
+
 
 ## Pin Configuration
 
