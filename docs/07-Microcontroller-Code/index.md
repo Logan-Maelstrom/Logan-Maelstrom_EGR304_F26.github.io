@@ -15,8 +15,7 @@ The following PIC18F57Q43 pins are used by the IMU subsystem:
 | BMI270 SCL | RB1 | I/O | I²C clock connection to BMI270 |
 | HAN_INPUT | RA0 | Input | Digital enable signal from Hannah's subsystem |
 | MAT_OUTPUT | RD2 | Output | Digital output to Matthew's subsystem |
-| YAZ_OUTPUT | RD5 | Output | Digital output to Yazmin's subsystem |
-| TEAM_EXTRA_OUTPUT | RF1 | Output | Revised team GPIO connection |
+| TEAM_EXTRA_OUTPUT | RF1 | Output | Digital output to Yazmin's subsystem |
 | DEBUG_LED | RD0 | Output | Firmware/debug indication |
 | DEBUG_BUTTON | RD1 | Input | Development and hardware-test input |
 
@@ -33,31 +32,30 @@ For this test, `HAN_INPUT` represented the external subsystem-enable signal and 
 | LOW | HIGH | LOW |
 | HIGH | HIGH | HIGH |
 
-With both test inputs HIGH and the Curiosity Nano operating at the required 5 V, `MAT_OUTPUT`, `YAZ_OUTPUT`, and `TEAM_EXTRA_OUTPUT` each measured approximately **5.01 V** with a digital multimeter.
+With both test inputs HIGH and the Curiosity Nano operating at the required 5 V, `MAT_OUTPUT` and `TEAM_EXTRA_OUTPUT` each measured approximately **5 V** with a digital multimeter.
 
 When either input was LOW, the team outputs remained LOW.
 
 ## BMI270 Communication
 
-The BMI270 accelerometer/gyroscope communicates with the PIC18F57Q43 through the I²C1 peripheral.
+The BMI270 accelerometer/gyroscope is interfaced with the PIC18F57Q43 through the I²C1 peripheral.
 
 The firmware includes support for:
 
 - BMI270 register reads and writes
 - BMI270 chip-ID verification
 - Multi-byte I²C reads
-- Raw X/Y/Z accelerometer measurements
-- Raw X/Y/Z gyroscope measurements
+- Functions for reading raw X/Y/Z accelerometer data
+- Functions for reading raw X/Y/Z gyroscope data
 - I²C communication error and timeout handling
 
 The BMI270 uses the 7-bit I²C address `0x68`.
 
-Final BMI270 hardware communication, initialization, and motion-detection calibration will be verified using the assembled subsystem PCB.
 
 ## Microcontroller Code
 
-The MPLAB X project used for the final subsystem hardware verification will be provided as a packaged ZIP archive.
+The MPLAB X project used for the final subsystem hardware verification is provided as a packaged ZIP archive below:
 
-**Final MPLAB X project:** To be uploaded after final hardware verification.
+[Download IMU Subsystem Verification Code](IMU_Subsystem_Verification_Code.zip)
 
 
